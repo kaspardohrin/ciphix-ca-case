@@ -23,6 +23,8 @@ This project is build with Node.js and Typescript, so let's go ahead and install
 
 To check if the installations were successful you can run the following commands:
 ```bash
+# make sure the versions installed are either the same version or a newer version
+
 $ node -v  # v13.13.3
 $ npm -v   # 6.14.4
 $ yarn -v  # 1.22.10
@@ -39,7 +41,7 @@ Now that you can access node, npm, yarn and tsc in your terminal we're ready to 
 "scripts": {
     "build": "tsc -b",                   # command to compile our typescript to javascript
     "watch": "tsc -w",                   # same as build, but recompiles after any changes in our code base
-    "start": "node ./dist/app.js",       # command to start and forward our app.js -file to localhost 
+    "start": "node ./dist/app.js",       # command to start and forward our app.js -file to localhost
     "nodemon": "nodemon ./dist/app.js",  # same as start but restarts the node-server after any changes in our code base
     "tunnel": "ngrok http 8080"          # command to forward our localhost to an url to temporarily access our app.js via the web
 },
